@@ -1,6 +1,6 @@
 $(".nav-item").on("click", (event) => {
     console.log(event.target)
-    let linkUrl = $(event.target).data("contentUrl");
+    let linkUrl = $(event.target).data("content-url");
     loadContent(linkUrl);
 })
 
