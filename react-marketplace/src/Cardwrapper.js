@@ -23,7 +23,13 @@ export default class CardWrapper extends Component {
                 <div className="row">
                     {
                         this.state.products.map( (product, index) => {
-                            return <Card  />
+                            return <Card 
+                                        imgUrl={product.imgUrl}  
+                                        name={product.name}
+                                        description={product.description}
+                                        price={product.price}
+                                        key={index}
+                                    />
                         })
                     }
                 </div>
